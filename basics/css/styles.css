@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Syne+Mono&display=swap");
+
+body {
+  background-color: #279c00;
+}
+
+main > section,
+footer,
+header,
+nav {
+  margin-top: 16px;
+  padding: 16px;
+}
+
+section > aside,
+article {
+  padding: 16px;
+}
+
+.bg-primary {
+  background-color: #50c700;
+}
+
+.bg-secondary {
+  background-color: #77d346;
+}
+
+.title,
+.text-content,
+kbd {
+  color: white;
+}
+
+.title {
+  font-family: "Syne Mono", monospace;
+}
+
+.text-content {
+  font-family: "Open Sans", sans-serif;
+}
+
+.shadow-and-round {
+  box-shadow: 2px 3px 5px #0c6320;
+  border-radius: 5px;
+}

@@ -4,26 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>My awesome webpage</title>
   </head>
   <body>
     <main>
-      <header>
-        <h2>My awesome page</h2>
-        <img alt="html5" src="./assets/html5-image.png" />
+      <header class="bg-primary shadow-and-round">
+        <h1 class="title">My awesome page</h1>
+        <img alt="html5" src="./assets/star.png" />
       </header>
-      <nav>
+      <nav class="bg-primary shadow-and-round">
         <ul>
-          <li>Select</li>
-          <li>Insert</li>
-          <li>Paste</li>
+          <li class="text-content">Select</li>
+          <li class="text-content">Insert</li>
+          <li class="text-content">Paste</li>
         </ul>
       </nav>
-      <section>
-        <h2>Ineresting content</h2>
-        <article>
-          <div>
-            <h2>More content</h2>
+      <section class="bg-primary shadow-and-round">
+        <h2 class="title">Ineresting content</h2>
+        <article class="bg-secondary">
+          <div class="text-content">
+            <h2 class="title">More content</h2>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
             vitae quia recusandae voluptate.
           </div>
@@ -54,9 +55,8 @@
             </audio>
           </div>
         </article>
-        <aside>
-          <h3>Small content</h3>
-          <hr />
+        <aside class="text-content bg-secondary">
+          <h3 class="title">Small content</h3>
           <abbr>CODELAPPS</abbr>
 
           <p>
@@ -67,14 +67,15 @@
           <p>You <em>have</em> to hurry up!</p>
 
           <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
-          <hr />
         </aside>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus
-        quas porro ratione perferendis deserunt harum blanditiis modi
-        consequatur pariatur itaque aliquid, iure voluptatibus deleniti odit
-        saepe quasi! Veritatis, est.
+        <div class="text-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          natus quas porro ratione perferendis deserunt harum blanditiis modi
+          consequatur pariatur itaque aliquid, iure voluptatibus deleniti odit
+          saepe quasi! Veritatis, est.
+        </div>
       </section>
-      <footer>Copy right ©️</footer>
+      <footer class="title bg-primary shadow-and-round">Copy right ©️</footer>
     </main>
   </body>
 </html>
