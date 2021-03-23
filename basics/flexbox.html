@@ -12,18 +12,6 @@
       <div class="item"></div>
       <div class="item"></div>
       <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
     </div>
   </body>
   <style>
@@ -32,9 +20,21 @@
       flex-direction: row;
       flex-wrap: wrap;
       /*flex-direction: row | row-reverse | column-reverse;*/
-      justify-content: center; /* MAIN AXIS spacing-aligment */
+      justify-content: space-between; /* MAIN AXIS spacing-aligment */
       align-items: flex-start; /* CROSS AXIS aligment*/
       align-content: space-around; /*CROSS AXIS spacing*/
+    }
+
+    .item:nth-child(1) {
+      order: 2 /* default 0 */
+    }
+
+    .item:nth-child(2) {
+      order: 3 /* default 0 */
+    }
+
+    .item:nth-child(3) {
+      order: 1 /* default 0 */
     }
   </style>
 </html>
