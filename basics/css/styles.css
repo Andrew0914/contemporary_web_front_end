@@ -43,3 +43,28 @@ kbd {
   box-shadow: 2px 3px 5px #0c6320;
   border-radius: 5px;
 }
+
+/*RESPONSIVE & ADAPTIVE STYLES */
+video,
+audio {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    flex-flow: row;
+  }
+
+  .container aside {
+    flex-grow: 1;
+  }
+  .container article {
+    flex-grow: 2;
+  }
+}
