@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/flexbox-utils.css" />
+    <title>Flex box</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae culpa quaerat veniam magnam quo! Unde facilis libero vitae quas molestiae id, assumenda architecto nobis ipsum, suscipit laborum autem molestias consequatur?
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae culpa quaerat veniam magnam quo! Unde facilis libero vitae quas molestiae id, assumenda architecto nobis ipsum, suscipit laborum autem molestias consequatur?
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae culpa quaerat veniam magnam quo! Unde facilis libero vitae quas molestiae id, assumenda architecto nobis ipsum, suscipit laborum autem molestias consequatur?
+      </div>
+    </div>
+  </body>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      /*flex-direction: row | row-reverse | column-reverse;*/
+      justify-content: space-between; /* MAIN AXIS spacing-aligment */
+      align-items: flex-start; /* CROSS AXIS aligment*/
+      align-content: space-around; /*CROSS AXIS spacing*/
+    }
+
+    .item:nth-child(1) {
+      flex-shrink: 0.1;
+      /*flex-basis: 0.1;*/
+    }
+
+    .item:nth-child(2) {
+      flex-shrink: 0.5;
+      /*flex-basis: 0.5;*/
+    }
+
+    .item:nth-child(3) {
+      flex-shrink: 0.2;
+      /*flex-basis: 0.2;*/
+    }
+  </style>
+</html>
