@@ -31,7 +31,13 @@ async function savePost({ title, body, userId }) {
 
     const data = await response.json();
 
-    console.log("✔ Post saved", data);
+    if (!response.ok) {
+      console.log("❌ Post could not save");
+    } else {
+      const data = await response.json();
+
+      console.log("✔ Post saved", data);
+    }
   } catch (error) {
     console.error(error);
   }
