@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">hello world</div>
+  </body>
+
+  <style>
+    .box {
+      height: 100px;
+      width: 200px;
+      background-color: aqua;
+      padding: 25px;
+      border: 10px solid blueviolet;
+      margin: 150px;
+      box-sizing: border-box;
+      color: white;
+      font-weight: bold;
+    }
+
+    .box {
+      background-image: linear-gradient(aqua, blue);
+    }
+
+    .box {
+      border-radius: 10px;
+      box-shadow: 3px 5px 10px blue;
+    }
+
+    .box {
+        transform: rotate(15deg) translateX(400px) translateY(100px) scale(4);
+    }
+
+    .box {
+        text-transform: uppercase;
+        text-shadow: 2px 1px 5px white;
+    }
+    
+
+    @keyframes movement {
+        0%{
+            color: yellow;
+            text-shadow: 2px 1px 5px white;
+            transform: rotate(0deg) translateX(50px) translateY(100px) scale(1);
+        }
+        50%{
+            color: white;
+            text-shadow: 2px 1px 10px yellow;
+            transform: rotate(120deg) translateX(100px) translateY(120px) scale(2);
+        }
+        100%{
+            color: yellow;
+            text-shadow: 2px 1px 15px white;
+            transform: rotate(360deg) translateX(200px) translateY(130px) scale(3);
+        }
+    }
+
+    .box {
+        animation-name: movement;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+  </style>
+</html>
