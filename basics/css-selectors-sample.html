@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="box">
-      <div class="item">
+      <div class="item" id="first-div">
         Hello
         <span>World</span>
       </div>
@@ -17,14 +17,19 @@
         <span>World</span>
       </div>
       <span>Everyone</span>
+      <span name="sign">!</span>
     </div>
   </body>
   <style>
     * {
-      font-family: Arial;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
-    .box > .item ~ span {
+    #first-div {
+      background-color: lightgray;
+    }
+
+    .box > .item + span {
       color: blue;
       font-size: 24px;
     }
@@ -37,6 +42,11 @@
     .box > .item::first-letter {
       font-size: 24px;
       color: orange;
+    }
+
+    span[name="sign"] {
+      font-size: 36px;
+      color: red;
     }
   </style>
 </html>
