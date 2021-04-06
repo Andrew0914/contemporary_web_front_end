@@ -1,0 +1,19 @@
+$margins: (
+  "m": "margin",
+  "mx": "margin",
+  "my": "margin",
+  "mt": "margin-top",
+  "mb": "margin-bottom",
+  "mr": "margin-right",
+  "ml": "margin-left",
+);
+
+@each $name, $rule in $margins {
+  .#{$name} {
+    @for $count from 1 through 16 {
+      &-#{$count} {
+        #{$rule}: #{$count * 8}px;
+      }
+    }
+  }
+}
