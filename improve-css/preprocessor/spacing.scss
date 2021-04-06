@@ -1,0 +1,25 @@
+$margins: (
+  "m": "margin",
+  "mx": "margin",
+  "my": "margin",
+  "mt": "margin-top",
+  "mb": "margin-bottom",
+  "mr": "margin-right",
+  "ml": "margin-left",
+);
+
+@each $name, $rule in $margins {
+  .#{$name} {
+    @for $count from 1 through 16 {
+      &-#{$count} {
+        @if $name == "mx" {
+          #{$rule}: auto #{$count * 8}px;
+        } @else if $name == "my" {
+          #{$rule}: #{$count * 8}px auto;
+        } @else {
+          #{$rule}: #{$count * 8}px;
+        }
+      }
+    }
+  }
+}
