@@ -1,0 +1,67 @@
+// Variables
+$primary-color: blue;
+$secondary-color: orange;
+
+.button-primary {
+  background-color: $primary-color;
+}
+
+.button-seconday {
+  background-color: $secondary-color;
+}
+
+// Anidaciones
+
+.menu {
+  display: flex;
+  flex-direction: row;
+
+  .item {
+    flex-flow: 1;
+    color: black;
+  }
+}
+
+// Concatenaciones
+
+.menu {
+  background-color: white;
+  &__item {
+    color: black;
+    &--highlight {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Bloques reutilizables
+
+@mixin apply_grid($distribution) {
+  display: grid;
+  grid-template-columns: $distribution;
+}
+
+.new-container {
+  @include apply_grid(1fr 1fr 1fr);
+  background-color: red;
+}
+
+%panel {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.small-panel {
+  width: 50%;
+  @extend %panel;
+}
+
+// Operaciones
+
+@mixin get_gap($items) {
+  gap: #{$items * 2}px;
+}
+
+.container-xs {
+  @include get_gap(3);
+}
