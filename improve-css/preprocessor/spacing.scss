@@ -12,7 +12,13 @@ $margins: (
   .#{$name} {
     @for $count from 1 through 16 {
       &-#{$count} {
-        #{$rule}: #{$count * 8}px;
+        @if $name == "mx" {
+          #{$rule}: auto #{$count * 8}px;
+        } @else if $name == "my" {
+          #{$rule}: #{$count * 8}px auto;
+        } @else {
+          #{$rule}: #{$count * 8}px;
+        }
       }
     }
   }
