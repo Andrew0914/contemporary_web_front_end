@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "grunt": "grunt sass",
-    "gulp": "gulp sass"
+    "gulp": "gulp sass",
+    "sass": "echo 'Creating css ... 🎨'; sass main.scss dist/npm-main.css"
   },
   "keywords": [],
   "author": "",
