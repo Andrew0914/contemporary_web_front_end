@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint *.js"
+    "lint": "eslint *.js",
+    "prettier:check": "prettier --check *.js",
+    "prettier:fix": "prettier --write *.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.23.0"
+    "eslint": "^7.23.0",
+    "prettier": "2.2.1"
   }
 }

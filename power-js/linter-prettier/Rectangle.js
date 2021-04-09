@@ -4,18 +4,19 @@ class Rectangle {
     this.width = width;
   }
 
-  get area() {
-    return this.calcArea();
-  }
-  calcArea(units) {
-    return this.height * this.width;
-  }
+get area() {
+return this.calcArea();
+}
+calcArea(units) {
+return this.height 
+* this.width;
+}
 
-  calcPerimeter() {
-    var perimeter;
-    perimeter = this.width * 2 + this.height * 2;
-    return perimeter;
-  }
+calcPerimeter() {
+var perimeter;
+perimeter = this.width * 2 + this.height * 2;
+return perimeter;
+}
 }
 
 const square = new Rectangle(10, 10);
@@ -29,5 +30,5 @@ const array = [1];
 
 // Incorrect for directions
 for (let i = 10; i < array.length; i--) {
-  console.log(i);
+  console.log("number", i);
 }
